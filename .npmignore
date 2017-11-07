@@ -2,7 +2,5 @@
 src
 node_modules
 test
-dist/index.html
-deploy.sh
 webpack.config.js
 example
