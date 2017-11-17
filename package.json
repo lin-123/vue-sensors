@@ -1,6 +1,6 @@
 {
   "name": "vue-sensors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue-sensors",
   "main": "dist/index.min.js",
   "scripts": {},
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/lin-123/vue-sensors"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/lin-123/vue-sensors/issues"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
