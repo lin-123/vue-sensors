@@ -16,7 +16,7 @@ module.exports = {
 
   unbind(el) {
     let [eventName, args] = values.get(el)
-    args.duration = Date.now() - timers.get(el)
+    args.duration = (Date.now() - timers.get(el)).toString()
     sa.track(eventName, args)
     values.delete(el)
   }
