@@ -3,7 +3,12 @@
   "version": "1.0.2",
   "description": "vue-sensors",
   "main": "dist/index.min.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "analyze": "ANALYZE=true webpack",
+    "umd": "webpack --config example/webpack.umd.js --watch"
+  },
   "author": "lin-123",
   "license": "ISC",
   "dependencies": {
@@ -17,19 +22,20 @@
     "url": "https://github.com/lin-123/vue-sensors/issues"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-runtime": "^6.26.0",
-    "expect": "^21.2.1",
-    "mocha": "^4.0.1",
-    "sinon": "^4.1.0",
-    "webpack": "^3.8.1",
-    "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-merge": "^4.1.0"
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.1",
+    "webpack": "^4.26.1",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.4"
   }
 }
